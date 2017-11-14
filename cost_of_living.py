@@ -10,6 +10,8 @@ carPayments = ""
 totalCar= 0
 totalCOL= 0
 
+
+import time
 def carQuestions():
     print("How many vehicles do you own? (please type digits)")
     carNumber = input()
@@ -66,3 +68,5 @@ print("Your total cost of living (COL) is: " + str(totalCOL))
 print("Rent is " + str(round((totalRent/totalCOL),2)*100) + "% of your costs.")
 print("Groceries are " + str(round((groceries/totalCOL),2)*100) + "% of your costs.")
 print("Cars are " + str(round((totalCar/totalCOL),2)*100) + "% of your costs.")
+
+time.sleep(150)
